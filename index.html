@@ -3,115 +3,267 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ショートで失敗した方へ｜hair make mare</title>
+<title>hair make mare | ショートで失敗した方へ</title>
 
 <style>
-body {
-  font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
-  margin: 0;
-  color: #333;
-  line-height: 1.6;
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
+
+:root{
+--main:#222;
+--sub:#8e8071;
+--bg:#fcfaf8;
 }
 
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
+body{
+font-family:'Shippori Mincho', serif;
+margin:0;
+line-height:2.2;
+color:#222;
+letter-spacing:0.05em;
+background:#fff;
 }
 
-h1, h2 {
-  text-align: center;
+/* コンテナ */
+.container{
+max-width:680px;
+margin:auto;
+padding:0 28px;
 }
 
-.hero {
-  background: #f5f5f5;
-  padding: 60px 20px;
-  text-align: center;
+/* ヘッダー */
+header{
+text-align:center;
+padding:70px 0 40px;
 }
 
-.cta {
-  display: block;
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  margin: 20px 0;
-  text-decoration: none;
+.logo{
+width:170px;
 }
 
-.section {
-  padding: 40px 0;
+/* ファーストビュー */
+.fv{
+background:var(--bg);
+padding:90px 25px;
+text-align:center;
 }
 
-.box {
-  background: #fafafa;
-  padding: 20px;
-  margin-bottom: 20px;
+.fv h1{
+font-size:24px;
+font-weight:700;
+line-height:1.8;
+margin-bottom:30px;
 }
 
-.before-after img {
-  width: 100%;
-  margin-bottom: 10px;
+.fv p{
+font-size:14px;
+color:#555;
+}
+
+/* セクション */
+.section{
+padding:90px 0;
+}
+
+.label{
+text-align:center;
+font-size:10px;
+letter-spacing:0.4em;
+color:var(--sub);
+margin-bottom:35px;
+display:block;
+}
+
+/* ボックス */
+.box{
+background:#fafafa;
+padding:25px;
+margin-bottom:25px;
+font-size:14px;
+}
+
+/* 画像 */
+img{
+width:100%;
+margin-bottom:20px;
+border-radius:2px;
+}
+
+/* CTA */
+.btn{
+display:block;
+text-align:center;
+border:1px solid var(--sub);
+padding:16px;
+margin:35px 0;
+text-decoration:none;
+color:var(--sub);
+font-size:12px;
+letter-spacing:0.15em;
+transition:0.3s;
+}
+
+.btn:hover{
+background:var(--sub);
+color:#fff;
+}
+
+/* フッター */
+.footer{
+background:#111;
+color:#fff;
+text-align:center;
+padding:90px 20px;
+}
+
+.footer h2{
+font-weight:700;
+line-height:1.8;
+}
+
+.footer a{
+background:#fff;
+color:#000;
+padding:16px 35px;
+text-decoration:none;
+display:inline-block;
+margin-top:25px;
+font-size:13px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- ファーストビュー -->
-<section class="hero">
-  <h1>ショートで失敗したことがある方へ</h1>
-  <p>広がる・まとまらないを<br>もう繰り返さない</p>
-  <a href="#" class="cta">LINEで予約する</a>
+<header>
+<img src="IMG_6650.jpeg" class="logo">
+</header>
+
+<!-- FV -->
+<section class="fv">
+<h1>
+ショートで失敗したことがある方へ。<br>
+都内に行かなくても、大和で失敗しないショートは叶う。
+</h1>
+
+<p>
+軽くされたら広がった。<br>
+量を減らされたらパサついた。<br>
+美容室帰りだけ良くて次の日から崩れる。<br><br>
+
+都内まで行かなくても、技術で妥協する必要はありません。<br><br>
+
+その原因は、ブリーチと癖毛の扱いにあります。<br><br>
+
+mareでは丸み矯正ストレートとカット設計で、<br>
+乾かすだけでまとまるショートを実現します。
+</p>
+
+<a href="https://beauty.hotpepper.jp/slnH000755415/" class="btn">
+初回限定｜失敗したくない方はこちら
+</a>
 </section>
 
 <div class="container">
 
 <!-- 共感 -->
 <section class="section">
-  <h2>こんな経験ありませんか？</h2>
+<span class="label">TROUBLE</span>
 
-  <div class="box">
-    <p>・美容室帰りはいいのに次の日から崩れる</p>
-    <p>・軽くされたら余計に広がった</p>
-    <p>・毎朝アイロンが必須</p>
-    <p>・ショートにしたいけど怖い</p>
-  </div>
+<div class="box">
+美容室で悩みが解決しなかった方。<br>
+毎回なんとなく満足できなかった方。<br>
+本当に似合う髪型が分からない方。<br><br>
+
+そんな方にこそ来てほしいと思っています。
+</div>
 </section>
 
-<!-- 解決 -->
+<!-- BA -->
 <section class="section">
-  <h2>乾かすだけで形になるショートへ</h2>
-  <p>
-    丸み矯正×カット設計で、<br>
-    朝のセットを3分に。
-  </p>
+<span class="label">BEFORE / AFTER</span>
+
+<p><strong>来店時：</strong>軽くされすぎて広がり、まとまらない状態</p>
+<img src="IMG_2015.jpeg" alt="ショート失敗 ビフォー">
+
+<p><strong>施術後：</strong>乾かすだけでまとまるショートへ</p>
+<img src="IMG_8381.jpeg" alt="丸み矯正 アフター">
+
+<p style="font-size:12px;text-align:center;color:#777;">
+※ブリーチ毛×癖毛の改善事例
+</p>
 </section>
 
-<!-- ビフォーアフター -->
-<section class="section before-after">
-  <h2>施術事例</h2>
-  <img src="IMG_7017.jpeg" alt="">
-  <img src="IMG_7019.jpeg" alt="">
+<!-- 技術 -->
+<section class="section">
+<span class="label">METHOD</span>
+
+<p>
+ブリーチと癖毛の状態で軽くすると広がります。<br><br>
+
+mareでは丸み矯正ストレートで整え、<br>
+収まる形にカット設計します。<br><br>
+
+だから乾かすだけでまとまります。
+</p>
+</section>
+
+<!-- 想い -->
+<section class="section">
+<span class="label">MESSAGE</span>
+
+<p>
+ショートで失敗した方を多く見てきました。<br><br>
+
+広がる、まとまらない、扱いづらい。<br>
+そんな状態から、もう一度ショートを楽しめるように。<br><br>
+
+美容室帰りだけで終わらない、<br>
+日常で扱いやすい髪型を大切にしています。
+</p>
 </section>
 
 <!-- 未来 -->
 <section class="section">
-  <h2>施術後の変化</h2>
-  <div class="box">
-    <p>・朝のセットが圧倒的に楽になる</p>
-    <p>・伸びても崩れにくい</p>
-    <p>・周りから褒められる</p>
-  </div>
+<span class="label">FUTURE</span>
+
+<p>
+朝のセットが楽になり、<br>
+鏡を見るのが少し楽しみになる。<br><br>
+
+そんな日常を増やしていけたら嬉しいです。
+</p>
 </section>
 
-<!-- CTA -->
+<!-- 口コミ -->
 <section class="section">
-  <h2>ご予約はこちら</h2>
-  <a href="#" class="cta">LINEで予約する</a>
+<span class="label">VOICE</span>
+
+<div class="box">
+何度もショートで失敗してきましたが、初めてまとまりました。
+</div>
+
+<div class="box">
+軽くされて広がるのが悩みでしたが、乾かすだけで収まります。
+</div>
+
+<div class="box">
+ブリーチ毛でも自然な丸みになって感動しました。
+</div>
+
+<a href="https://beauty.hotpepper.jp/slnH000755415/" class="btn">
+この技術を予約する
+</a>
 </section>
 
 </div>
+
+<!-- フッター -->
+<section class="footer">
+<h2>鏡の向こうに、新しい自分を。</h2>
+<a href="https://beauty.hotpepper.jp/slnH000755415/">
+ご予約はこちら
+</a>
+</section>
 
 </body>
 </html>
