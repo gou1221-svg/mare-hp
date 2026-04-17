@@ -19,41 +19,43 @@
 --ocean:#6ea8b5;
 }
 
+/* ベース */
 body{
 font-family:'Shippori Mincho', serif;
 margin:0;
-line-height:2.2;
+line-height:2.1;
 color:#222;
 letter-spacing:0.05em;
 background:linear-gradient(to bottom,#fff,#eaf4f6);
 }
 
+/* コンテナ */
 .container{
-max-width:760px;
+max-width:720px;
 margin:auto;
-padding:0 24px;
+padding:0 22px;
 }
 
-/* HEADER */
+/* ヘッダー */
 header{
 text-align:center;
-padding:80px 0 40px;
+padding:70px 0 30px;
 }
 
 .logo{
-width:260px;
+width:240px;
 max-width:80%;
 }
 
 /* FV */
 .fv{
-padding:80px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
 .fv h1{
-font-size:22px;
-margin:20px 0;
+font-size:20px;
+margin:18px 0;
 }
 
 .sub{
@@ -62,36 +64,54 @@ color:var(--sub);
 letter-spacing:0.15em;
 }
 
-/* SECTION */
+/* セクション */
 .section{
-padding:70px 0;
+padding:65px 0;
 }
 
 h2{
-font-size:14px;
+font-size:13px;
 letter-spacing:0.3em;
 text-align:center;
 color:var(--sub);
-margin-bottom:30px;
+margin-bottom:28px;
 }
 
+/* ボックス */
 .box{
-padding:20px;
+padding:18px;
 background:#fff;
-margin-bottom:20px;
+margin-bottom:18px;
 border-radius:6px;
+}
+
+/* 画像（ここが修正ポイント） */
+img{
+width:100%;
+max-width:100%;
+height:auto;
+display:block;
+margin:0 auto 18px;
+border-radius:6px;
+}
+
+/* 画像だけ少し抑える（LPバランス） */
+.section img{
+max-width:92%;
 }
 
 /* CTA */
 .btn{
 display:block;
 text-align:center;
-padding:16px;
+padding:15px;
 border:1px solid var(--ocean);
 color:var(--ocean);
 text-decoration:none;
-margin:40px 0;
+margin:35px 0;
 transition:.3s;
+font-size:12px;
+letter-spacing:0.15em;
 }
 
 .btn:hover{
@@ -99,12 +119,12 @@ background:var(--ocean);
 color:#fff;
 }
 
-/* FOOTER */
+/* フッター */
 footer{
 background:#203a43;
 color:#fff;
 text-align:center;
-padding:80px 20px;
+padding:70px 20px;
 font-size:12px;
 }
 </style>
@@ -128,9 +148,9 @@ font-size:12px;
 都内に行かなくても、大和で“失敗しないショート”は作れます。<br><br>
 
 軽くされたら広がる・まとまらない。<br>
-その多くは髪質ではなく「設計ミス」です。<br><br>
+その原因の多くは髪質ではなく設計です。<br><br>
 
-mareでは骨格・癖・髪質を前提にしたカット設計で、<br>
+mareでは骨格・癖・髪質に合わせた設計で、<br>
 乾かすだけでまとまるショートを提供します。
 </p>
 
@@ -144,13 +164,10 @@ mareでは骨格・癖・髪質を前提にしたカット設計で、<br>
 <h2>CONCEPT</h2>
 
 <div class="box">
-当店はショートカットに特化した美容室です。<br><br>
+ショートカットに特化した美容室です。<br><br>
 
-・骨格補正<br>
-・癖の扱い<br>
-・再現性設計<br><br>
-
-を軸に、翌日から扱いやすい髪を作ります。
+骨格補正・癖の扱い・再現性設計を軸に、<br>
+翌日から扱いやすい髪を作ります。
 </div>
 </section>
 
@@ -162,7 +179,7 @@ mareでは骨格・癖・髪質を前提にしたカット設計で、<br>
 
 ・乾かすだけで形になる<br>
 ・朝のセット時間を短縮<br>
-・無理なスタイリング不要
+・スタイリング依存を減らす
 </div>
 </section>
 
@@ -182,7 +199,7 @@ mareでは骨格・癖・髪質を前提にしたカット設計で、<br>
 <p>AFTER</p>
 <img src="IMG_8381.jpeg">
 
-<p style="font-size:12px;text-align:center;">
+<p style="font-size:11px;text-align:center;">
 ※癖・ブリーチ履歴あり
 </p>
 </section>
