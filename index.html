@@ -3,184 +3,246 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salon LP</title>
+
+<title>大和美容室 mare｜ショートカット専門美容室（乾かすだけでまとまる髪へ）</title>
+
+<meta name="description" content="大和美容室mareはショートカット専門美容室です。骨格・髪質・くせに合わせた設計で、乾かすだけでまとまる再現性の高いヘアスタイルを提供します。">
+
+<link rel="canonical" href="https://hairmakemareyamato.com">
 
 <style>
-body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  color: #111;
-  background: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
+
+:root{
+--main:#222;
+--sub:#8e8071;
+--ocean:#6ea8b5;
 }
 
-/* 全体の空気感 */
-section {
-  padding: 80px 18px;
+/* ベース */
+body{
+font-family:'Shippori Mincho', serif;
+margin:0;
+line-height:2.1;
+color:#222;
+letter-spacing:0.05em;
+background:linear-gradient(to bottom,#fff,#eaf4f6);
 }
 
-/* 見出しの圧 */
-h2 {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
+/* コンテナ */
+.container{
+max-width:720px;
+margin:auto;
+padding:0 22px;
 }
 
-/* HERO（全面画像＋文字重ね） */
-.hero {
-  height: 100vh;
-  background: url('hero.jpg') center/cover no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
+/* ヘッダー */
+header{
+text-align:center;
+padding:70px 0 30px;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
+.logo{
+width:240px;
+max-width:80%;
 }
 
-.hero-inner {
-  position: relative;
-  z-index: 2;
+/* FV */
+.fv{
+padding:70px 20px;
+text-align:center;
 }
 
-.hero h1 {
-  font-size: 30px;
-  font-weight: 700;
-  margin: 0 0 10px;
+.fv h1{
+font-size:20px;
+margin:18px 0;
 }
 
-.hero p {
-  font-size: 14px;
-  opacity: 0.9;
+.sub{
+font-size:12px;
+color:var(--sub);
+letter-spacing:0.15em;
 }
 
-/* CTAボタン（丸くて強い） */
-.btn {
-  margin-top: 18px;
-  display: inline-block;
-  background: #fff;
-  color: #111;
-  padding: 14px 28px;
-  border-radius: 50px;
-  font-weight: 600;
-  text-decoration: none;
+/* セクション */
+.section{
+padding:65px 0;
 }
 
-/* セクションのトーン切替 */
-.gray {
-  background: #f6f6f6;
+h2{
+font-size:13px;
+letter-spacing:0.3em;
+text-align:center;
+color:var(--sub);
+margin-bottom:28px;
 }
 
-/* カードではなく“行” */
-.list {
-  max-width: 720px;
-  margin: 0 auto;
+/* ボックス */
+.box{
+padding:18px;
+background:#fff;
+margin-bottom:18px;
+border-radius:6px;
 }
 
-.item {
-  padding: 18px 0;
-  border-bottom: 1px solid #eaeaea;
-  font-size: 15px;
+/* 画像（ここが修正ポイント） */
+img{
+width:100%;
+max-width:100%;
+height:auto;
+display:block;
+margin:0 auto 18px;
+border-radius:6px;
 }
 
-/* ビフォーアフター（全面寄せ） */
-.ba {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px;
+/* 画像だけ少し抑える（LPバランス） */
+.section img{
+max-width:92%;
 }
 
-.ba img {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
+/* CTA */
+.btn{
+display:block;
+text-align:center;
+padding:15px;
+border:1px solid var(--ocean);
+color:var(--ocean);
+text-decoration:none;
+margin:35px 0;
+transition:.3s;
+font-size:12px;
+letter-spacing:0.15em;
 }
 
-/* 口コミ（リアル感） */
-.review {
-  max-width: 720px;
-  margin: 0 auto 12px;
-  padding: 16px;
-  border-left: 3px solid #111;
-  background: #fafafa;
-  font-size: 14px;
+.btn:hover{
+background:var(--ocean);
+color:#fff;
 }
 
-/* CTA帯（黒で締める） */
-.cta {
-  background: #111;
-  color: #fff;
-  text-align: center;
-}
-
-.cta a {
-  background: #fff;
-  color: #111;
+/* フッター */
+footer{
+background:#203a43;
+color:#fff;
+text-align:center;
+padding:70px 20px;
+font-size:12px;
 }
 </style>
+
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-    <h1>乾かすだけで決まるショート</h1>
-    <p>再現性重視のデザインカット</p>
-    <a class="btn" href="#reserve">予約する</a>
-  </div>
+<header>
+<img src="IMG_6650.jpeg" class="logo">
+<p style="font-size:12px;color:#8e8071;">大和美容室 mare</p>
+</header>
+
+<section class="fv">
+
+<p class="sub">ショートカット専門美容室｜乾かすだけでまとまる設計</p>
+
+<h1>大和美容室 mare｜ショートカット専門美容室</h1>
+
+<p>
+都内に行かなくても、大和で“失敗しないショート”は作れます。<br><br>
+
+軽くされたら広がる・まとまらない。<br>
+その原因の多くは髪質ではなく設計です。<br><br>
+
+mareでは骨格・癖・髪質に合わせた設計で、<br>
+乾かすだけでまとまるショートを提供します。
+</p>
+
+<a href="https://beauty.hotpepper.jp/slnH000755415/" class="btn">ご予約はこちら</a>
+
 </section>
 
-<!-- PROBLEM -->
-<section>
-  <h2>こんな悩みありませんか？</h2>
-  <div class="list">
-    <div class="item">朝セットしても崩れる</div>
-    <div class="item">美容室帰りだけ綺麗</div>
-    <div class="item">ショートがしっくりこない</div>
-  </div>
+<div class="container">
+
+<section class="section">
+<h2>CONCEPT</h2>
+
+<div class="box">
+ショートカットに特化した美容室です。<br><br>
+
+骨格補正・癖の扱い・再現性設計を軸に、<br>
+翌日から扱いやすい髪を作ります。
+</div>
 </section>
 
-<!-- SOLUTION -->
-<section class="gray">
-  <h2>解決の考え方</h2>
-  <div class="list">
-    <div class="item">骨格から逆算してカット設計</div>
-    <div class="item">乾かすだけで形になる構造</div>
-    <div class="item">再現性を最優先にした設計思想</div>
-  </div>
+<section class="section">
+<h2>WHY US</h2>
+
+<div class="box">
+美容室帰りではなく「日常の扱いやすさ」を重視しています。<br><br>
+
+・乾かすだけで形になる<br>
+・朝のセット時間を短縮<br>
+・スタイリング依存を減らす
+</div>
 </section>
 
-<!-- BEFORE AFTER -->
-<section>
-  <h2>実例</h2>
-  <div class="ba">
-    <img src="before.jpg">
-    <img src="after.jpg">
-  </div>
+<section class="section">
+<h2>STYLE</h2>
+
+<img src="IMG_7017.jpeg">
+<img src="IMG_7019.jpeg">
 </section>
 
-<!-- REVIEWS -->
-<section class="gray">
-  <h2>お客様の声</h2>
-  <div class="review">朝が圧倒的に楽になった</div>
-  <div class="review">周りから褒められるようになった</div>
-  <div class="review">スタイリングが不要になった</div>
+<section class="section">
+<h2>BEFORE / AFTER</h2>
+
+<p>BEFORE</p>
+<img src="IMG_0215.jpeg">
+
+<p>AFTER</p>
+<img src="IMG_8381.jpeg">
+
+<p style="font-size:11px;text-align:center;">
+※癖・ブリーチ履歴あり
+</p>
 </section>
 
-<!-- CTA -->
-<section class="cta" id="reserve">
-  <h2>ご予約</h2>
-  <a class="btn" href="#">LINEで予約</a>
+<section class="section">
+<h2>METHOD</h2>
+
+<div class="box">
+癖を無視して軽くすると広がります。<br><br>
+
+mareでは丸み設計＋カット技術で収まりを作ります。<br>
+ブリーチ毛でも対応可能です。
+</div>
 </section>
+
+<section class="section">
+<h2>VOICE</h2>
+
+<div class="box">初めてまとまるショートになりました</div>
+<div class="box">乾かすだけで収まるのが楽です</div>
+<div class="box">ブリーチ毛でも自然でした</div>
+</section>
+
+<section class="section">
+<h2>ACCESS</h2>
+
+<div class="box">
+大和美容室 mare<br>
+住所：〇〇〇〇〇〇<br>
+営業時間：〇〇<br>
+定休日：〇〇
+</div>
+</section>
+
+<a href="https://beauty.hotpepper.jp/slnH000755415/" class="btn">
+ご予約はこちら
+</a>
+
+</div>
+
+<footer>
+大和美容室 mare｜ショートカット専門美容室
+</footer>
 
 </body>
 </html>
