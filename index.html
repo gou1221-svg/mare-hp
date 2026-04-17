@@ -3,113 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hair Salon LP</title>
+<title>Salon LP</title>
 
 <style>
 body {
   margin: 0;
-  font-family: "Helvetica Neue", sans-serif;
-  color: #222;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  color: #111;
   background: #fff;
 }
 
-/* セクション共通 */
+/* 全体の空気感 */
 section {
-  padding: 70px 20px;
-  max-width: 900px;
-  margin: 0 auto;
+  padding: 80px 18px;
 }
 
-/* 見出し */
+/* 見出しの圧 */
 h2 {
-  font-size: 22px;
   text-align: center;
+  font-size: 20px;
+  font-weight: 700;
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
 
-/* ファーストビュー */
+/* HERO（全面画像＋文字重ね） */
 .hero {
   height: 100vh;
   background: url('hero.jpg') center/cover no-repeat;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
-  flex-direction: column;
-  position: relative;
 }
 
-.hero::before {
+.hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.45);
 }
 
-.hero-content {
+.hero-inner {
   position: relative;
   z-index: 2;
 }
 
 .hero h1 {
-  font-size: 34px;
-  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 10px;
 }
 
 .hero p {
-  font-size: 16px;
+  font-size: 14px;
   opacity: 0.9;
 }
 
-/* ボタン */
+/* CTAボタン（丸くて強い） */
 .btn {
+  margin-top: 18px;
   display: inline-block;
-  margin-top: 20px;
-  padding: 14px 26px;
-  background: #111;
-  color: #fff;
+  background: #fff;
+  color: #111;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
   text-decoration: none;
-  border-radius: 30px;
-  font-size: 14px;
 }
 
-/* カード */
-.card {
-  background: #f7f7f7;
-  padding: 18px;
-  border-radius: 10px;
-  margin-bottom: 12px;
+/* セクションのトーン切替 */
+.gray {
+  background: #f6f6f6;
 }
 
-/* ビフォーアフター */
+/* カードではなく“行” */
+.list {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.item {
+  padding: 18px 0;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 15px;
+}
+
+/* ビフォーアフター（全面寄せ） */
 .ba {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 6px;
 }
 
 .ba img {
   width: 100%;
-  border-radius: 10px;
+  height: 240px;
+  object-fit: cover;
 }
 
-/* 口コミ */
+/* 口コミ（リアル感） */
 .review {
-  background: #fff;
-  border: 1px solid #eee;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  max-width: 720px;
+  margin: 0 auto 12px;
+  padding: 16px;
+  border-left: 3px solid #111;
+  background: #fafafa;
+  font-size: 14px;
 }
 
-/* CTA固定風 */
+/* CTA帯（黒で締める） */
 .cta {
-  text-align: center;
   background: #111;
   color: #fff;
-  padding: 50px 20px;
+  text-align: center;
 }
 
 .cta a {
@@ -123,65 +132,54 @@ h2 {
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-content">
+  <div class="hero-inner">
     <h1>乾かすだけで決まるショート</h1>
-    <p>骨格補正×再現性カット専門</p>
-    <a href="#reserve" class="btn">今すぐ予約</a>
+    <p>再現性重視のデザインカット</p>
+    <a class="btn" href="#reserve">予約する</a>
   </div>
 </section>
 
 <!-- PROBLEM -->
 <section>
-  <h2>こんなお悩みありませんか？</h2>
-  <div class="card">朝セットがうまくいかない</div>
-  <div class="card">ショートが似合わない気がする</div>
-  <div class="card">美容室帰りだけ綺麗</div>
+  <h2>こんな悩みありませんか？</h2>
+  <div class="list">
+    <div class="item">朝セットしても崩れる</div>
+    <div class="item">美容室帰りだけ綺麗</div>
+    <div class="item">ショートがしっくりこない</div>
+  </div>
 </section>
 
 <!-- SOLUTION -->
-<section>
-  <h2>その悩みは設計で変わります</h2>
-  <p style="text-align:center;">
-    髪質ではなく「骨格」と「生えグセ」から逆算します
-  </p>
+<section class="gray">
+  <h2>解決の考え方</h2>
+  <div class="list">
+    <div class="item">骨格から逆算してカット設計</div>
+    <div class="item">乾かすだけで形になる構造</div>
+    <div class="item">再現性を最優先にした設計思想</div>
+  </div>
 </section>
 
 <!-- BEFORE AFTER -->
 <section>
-  <h2>実績</h2>
+  <h2>実例</h2>
   <div class="ba">
     <img src="before.jpg">
     <img src="after.jpg">
   </div>
 </section>
 
-<!-- TECH -->
-<section>
-  <h2>技術の特徴</h2>
-  <div class="card">乾かすだけで形になる設計カット</div>
-  <div class="card">襟足・丸みのコントロール</div>
-  <div class="card">再現性重視のセクション設計</div>
-</section>
-
 <!-- REVIEWS -->
-<section>
+<section class="gray">
   <h2>お客様の声</h2>
-  <div class="review">毎朝が楽になりました</div>
-  <div class="review">周りに褒められるようになった</div>
-</section>
-
-<!-- ACCESS -->
-<section>
-  <h2>店舗情報</h2>
-  <p style="text-align:center;">
-    営業時間 / 住所 / アクセス
-  </p>
+  <div class="review">朝が圧倒的に楽になった</div>
+  <div class="review">周りから褒められるようになった</div>
+  <div class="review">スタイリングが不要になった</div>
 </section>
 
 <!-- CTA -->
 <section class="cta" id="reserve">
-  <h2>ご予約はこちら</h2>
-  <a href="#" class="btn">LINEで予約</a>
+  <h2>ご予約</h2>
+  <a class="btn" href="#">LINEで予約</a>
 </section>
 
 </body>
