@@ -3,29 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>hair make mare</title>
+<title>hair make mare | ショートで失敗した方へ</title>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
 
+:root{
+--main:#222;
+--sub:#8e8071;
+--ocean:#6ea8b5;
+}
+
+/* 海っぽい背景 */
 body{
 font-family:'Shippori Mincho', serif;
-line-height:2.4;
-letter-spacing:0.05em;
 margin:0;
+line-height:2.2;
 color:#222;
-background:linear-gradient(to bottom,#fff,#f7fbfc);
+letter-spacing:0.05em;
+background:linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #f2f9fb 40%,
+    #e3f2f6 70%,
+    #d4ebf2 100%
+);
 }
 
 .container{
 max-width:680px;
 margin:auto;
-padding:0 30px;
+padding:0 28px;
 }
 
+/* ヘッダー */
 header{
 text-align:center;
 padding:120px 0 70px;
+background:linear-gradient(to bottom,#ffffff,#eef7f9);
 }
 
 .logo{
@@ -33,58 +48,98 @@ width:300px;
 max-width:85%;
 }
 
+/* FV */
+.fv{
+padding:100px 25px;
+text-align:center;
+background:linear-gradient(to bottom,#fcfaf8 60%,#eaf4f6);
+}
+
+/* ← ここで1行に収める */
+.fv h1{
+font-size:clamp(18px,4.5vw,24px);
+font-weight:700;
+line-height:1.6;
+margin-bottom:30px;
+white-space:nowrap;
+}
+
+.fv p{
+font-size:14px;
+color:#555;
+}
+
+/* セクション */
 .section{
 padding:90px 0;
-}
-
-h1{
-font-size:24px;
-line-height:1.8;
-margin-bottom:40px;
-}
-
-p{
+background:rgba(255,255,255,0.65);
+backdrop-filter:blur(6px);
+border-radius:6px;
 margin-bottom:25px;
-font-size:14px;
 }
 
 .label{
+text-align:center;
 font-size:10px;
 letter-spacing:0.4em;
-color:#8e8071;
-text-align:center;
+color:var(--sub);
+margin-bottom:35px;
 display:block;
-margin-bottom:40px;
 }
 
 .box{
-background:#fff;
+background:rgba(255,255,255,0.8);
 padding:25px;
 margin-bottom:25px;
 }
 
 img{
 width:100%;
-margin:20px 0;
+margin-bottom:20px;
 border-radius:4px;
 }
 
+/* CTA */
 .btn{
 display:block;
 text-align:center;
-border:1px solid #6ea8b5;
+border:1px solid var(--ocean);
 padding:16px;
-margin:50px 0;
-color:#6ea8b5;
+margin:40px 0;
 text-decoration:none;
+color:var(--ocean);
+font-size:12px;
+letter-spacing:0.15em;
+transition:0.3s;
 }
 
+.btn:hover{
+background:var(--ocean);
+color:#fff;
+}
+
+/* インスタ */
 .insta{
-text-align:center;
+background:linear-gradient(to right,#eaf4f6,#ffffff);
 padding:60px 20px;
-background:#eef7f9;
+text-align:center;
+margin:80px 0;
+border-radius:6px;
 }
 
+.insta a{
+color:var(--ocean);
+text-decoration:none;
+font-weight:bold;
+}
+
+/* フッター */
+.footer{
+background:linear-gradient(to top,#0f2027,#203a43,#2c5364);
+color:#fff;
+text-align:center;
+padding:100px 20px;
+}
 </style>
 </head>
 
@@ -94,131 +149,110 @@ background:#eef7f9;
 <img src="IMG_6650.jpeg" class="logo">
 </header>
 
-<div class="container">
-
-<section class="section">
-
+<section class="fv">
 <h1>
-ショートで失敗したことがある方へ。<br><br>
-
-都内に行かなくても、<br>
-大和で失敗しないショートは叶います。
+ショートで失敗したことがある方へ。
 </h1>
 
 <p>
-軽くされたら広がる。<br>
-まとまらない。<br>
-扱いにくい。
-</p>
+都内に行かなくても、大和で失敗しないショートは叶う。<br><br>
 
-<p>
-そんな悩みの原因は、<br>
-「癖」にあることがほとんどです。
-</p>
+軽くされたら広がった。<br>
+まとまらない、扱いにくい。<br><br>
 
-<p>
-ブリーチや髪質そのものではなく、<br>
-状態に合っていない施術が原因です。
-</p>
+その原因の多くは「癖」にあります。<br><br>
 
-<p>
-mareでは、<br>
-乾かすだけでまとまるショートを作ります。
+ブリーチや髪質の問題ではなく、<br>
+状態に合っていない施術が原因です。<br><br>
+
+mareでは乾かすだけでまとまるショートを実現します。
 </p>
 
 <a href="https://beauty.hotpepper.jp/slnH000755415/" class="btn">
 失敗したくない方はこちら
 </a>
-
 </section>
 
-<section class="section">
+<div class="container">
 
+<section class="section">
 <span class="label">FOR YOU</span>
 
-<p>
-美容室で悩みが解決しなかった。<br>
-なんとなく満足できない。<br>
-似合う髪型が分からない。
-</p>
+<div class="box">
+美容室で悩みが解決しなかった方。<br>
+毎回なんとなく満足できなかった方。<br>
+本当に似合うスタイルが分からない方。<br><br>
 
-<p>
-そんな方にこそ来てほしいと思っています。
-</p>
+そんな方にこそ来てほしいと思っています。<br><br>
 
-<p>
 年齢とともに髪の悩みは変わり、<br>
-自分のことは後回しになりがちです。
-</p>
+忙しい毎日の中で自分のことは後回しになりがちです。<br><br>
 
-<p>
-それでも、<br>
-「無理せず自然に綺麗でいたい」
-</p>
-
-<p>
+それでも「自然に綺麗でいたい」<br>
 その気持ちは大切だと思っています。
-</p>
-
+</div>
 </section>
 
 <section class="section">
-
 <span class="label">BEFORE / AFTER</span>
 
-<p>来店時</p>
+<p>来店時：広がり、まとまらない状態</p>
 <img src="IMG_0215.jpeg">
 
-<p>施術後</p>
+<p>施術後：乾かすだけでまとまる</p>
 <img src="IMG_8381.jpeg">
 
 <p style="font-size:12px;text-align:center;">
-※癖＋ブリーチ履歴あり
+※癖＋ブリーチ履歴ありの改善事例
 </p>
-
 </section>
 
 <section class="insta">
-
 <p>
-スタイルはInstagramに掲載しています。<br><br>
+スタイルはInstagramに多数掲載しています。<br><br>
 
-実際のお客様の仕上がりを<br>
-ぜひご覧ください。
+・ビフォーアフター事例<br>
+・癖毛・ブリーチ毛のリアルな仕上がり<br>
+・乾かすだけでまとまるショート実例<br><br>
+
+来店前にイメージを確認したい方は、ぜひご覧ください。
 </p>
 
 <a href="https://www.instagram.com/short_gou1221">
-Instagramを見る
+▶ Instagramを見る
 </a>
-
 </section>
 
 <section class="section">
+<span class="label">STYLE</span>
+<img src="IMG_7017.jpeg">
+<img src="IMG_7019.jpeg">
+</section>
 
+<section class="section">
+<span class="label">SALON</span>
+<img src="IMG_7026.jpeg">
+<img src="IMG_9630.jpeg">
+</section>
+
+<section class="section">
 <span class="label">METHOD</span>
 
 <p>
-癖を整えずに軽くすると、広がります。
-</p>
+癖を整えずに軽くすると広がります。<br><br>
 
-<p>
-mareでは丸み矯正で整え、<br>
-収まる形にカットします。
-</p>
+mareでは丸み矯正とカット設計で<br>
+収まる形に整えます。<br><br>
 
-<p>
-ブリーチ毛でも、<br>
-自然にまとまる状態にできます。
+ブリーチ毛でも自然にまとまります。
 </p>
-
 </section>
 
 <section class="section">
-
 <span class="label">VOICE</span>
 
 <div class="box">
-何度も失敗してきましたが、初めてまとまりました。
+何度も失敗してきましたが初めてまとまりました。
 </div>
 
 <div class="box">
@@ -236,6 +270,10 @@ mareでは丸み矯正で整え、<br>
 </a>
 
 </div>
+
+<section class="footer">
+<h2>鏡の向こうに、新しい自分を。</h2>
+</section>
 
 </body>
 </html>
