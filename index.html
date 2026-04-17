@@ -5,79 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hair make mare | 大和市のショートカット専門店</title>
     <style>
-        :root { --main-color: #8e8071; --accent-color: #d8c2b1; --text-color: #444; }
-        body { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif; line-height: 1.8; color: var(--text-color); margin: 0; background-color: #fff; }
-        .container { width: 100%; max-width: 550px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; }
-        header { padding: 40px 0; text-align: center; }
-        .logo-img { width: 180px; height: auto; }
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
 
-        /* ヒーローエリア */
-        .hero { position: relative; margin-bottom: 60px; text-align: center; }
-        .hero-img { width: 100%; height: 400px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .hero-text h1 { font-size: 22px; margin: 25px 0 10px; letter-spacing: 0.1em; color: var(--main-color); }
+        :root { 
+            --main-color: #004d61; 
+            --sub-color: #8e8071; 
+            --leaf-color: #556b2f; 
+            --bg-color: #fdfaf7; 
+            --text-color: #333;
+        }
 
-        /* お悩み解決セクション */
-        .message-section { background-color: #f9f6f3; padding: 60px 20px; border-radius: 30px; margin: 40px 0; text-align: center; }
-        .message-section h2 { font-size: 18px; color: var(--main-color); margin-bottom: 30px; }
-        .problem-list { text-align: left; display: inline-block; margin-bottom: 30px; font-size: 14px; }
-        .problem-list li { margin-bottom: 15px; list-style: "✔ "; color: #666; }
+        body { 
+            font-family: 'M PLUS Rounded 1c', sans-serif; 
+            line-height: 1.9; 
+            color: var(--text-color); 
+            margin: 0; 
+            background-color: var(--bg-color); 
+            -webkit-font-smoothing: antialiased; 
+        }
 
-        /* メニュー */
-        .menu-box { border: 1px solid #eee; padding: 30px 20px; border-radius: 15px; margin: 40px 0; }
-        .menu-item { display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding: 15px 0; font-size: 14px; }
-        .price { font-weight: bold; color: var(--main-color); }
+        .container { width: 100%; max-width: 600px; margin: 0 auto; padding: 0 25px; box-sizing: border-box; }
+        
+        header { padding: 60px 0 30px; text-align: center; }
+        .logo-img { width: 140px; height: auto; letter-spacing: 0.3em; }
 
-        .btn { display: block; background: var(--main-color); color: #fff; text-align: center; padding: 20px; text-decoration: none; border-radius: 50px; font-weight: bold; margin: 20px 0; }
-        .btn-recruit { background: #fff; color: var(--main-color); border: 1px solid var(--main-color); }
+        .concept-area { 
+            padding: 90px 0; 
+            text-align: center; 
+            background-color: #fff; 
+            margin-bottom: 60px; 
+            position: relative;
+            border-bottom: 5px solid #eae1d7;
+        }
+        
+        .concept-lead { 
+            font-size: 20px; 
+            font-weight: 700; 
+            line-height: 1.8; 
+            margin-bottom: 40px; 
+            letter-spacing: 0.1em; 
+            color: var(--main-color); 
+        }
+        
+        .concept-text { font-size: 14px; color: #555; text-align: left; display: inline-block; max-width: 450px; }
 
-        footer { background: #f8f8f8; padding: 60px 20px; text-align: center; font-size: 12px; color: #999; }
+        /* 中間の予約ボタン */
+        .mid-cta { text-align: center; margin: 40px 0 80px; }
+        .btn-small { display: inline-block; background: var(--main-color); color: #fff; padding: 15px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 14px; }
+
+        /* Style Gallery */
+        .gallery { margin-bottom: 100px; }
+        .gallery-title { text-align: center; font-size: 16px; letter-spacing: 0.3em; color: var(--leaf-color); margin-bottom: 30px; font-weight: bold;}
+        .gallery-scroll { display: flex; overflow-x: auto; -webkit-overflow-scrolling: touch; gap: 18px; padding-bottom: 25px; }
+        .gallery-item { flex: 0 0 75%; }
+        .gallery-img { width: 100%; height: 380px; object-fit: cover; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+
+        /* 口コミセクション */
+        .voice-section { padding: 80px 0; background-color: #fff; border-radius: 40px; margin-bottom: 80px; }
+        .voice-title { text-align: center; font-size: 18px; color: var(--main-color); margin-bottom: 40px; letter-spacing: 0.2em; }
+        .voice-card { background: var(--bg-color); padding: 25px; border-radius: 15px; margin-bottom: 25px; border-left: 4px solid var(--sub-color); }
+        .voice-text { font-size: 13px; color: #555; margin-bottom: 10px; }
+        .voice-info { font-size: 11px; color: var(--sub-color); text-align: right; }
+
+        /* Menu Section */
+        .menu-section { padding: 90px 0; background-color: #fff; text-align: center; margin-bottom: 60px; }
+        .menu-section h2 { font-size: 20px; letter-spacing: 0.3em; margin-bottom: 40px; color: var(--main-color); }
+        .menu-category { margin-bottom: 40px; text-align: left; }
+        .category-name { font-size: 15px; color: var(--main-color); border-bottom: 1px solid var(--sub-color); padding-bottom: 5px; margin-bottom: 15px; display: block; font-weight: bold; }
+        .menu-item { display: flex; justify-content: space-between; align-items: baseline; padding: 10px 0; font-size: 14px; border-bottom: 1px dashed #eee; }
+        .price { color: var(--main-color); font-weight: bold; }
+
+        /* Footer CTA */
+        .cta-area { padding: 100px 0; text-align: center; background: #fff;}
+        .btn-large { display: block; background: var(--main-color); color: #fff; text-align: center; padding: 22px; text-decoration: none; font-size: 14px; letter-spacing: 0.2em; margin-bottom: 20px; border-radius: 50px; font-weight: bold; }
+        
+        footer { padding: 90px 0; text-align: center; font-size: 12px; color: #888; background-color: var(--bg-color); }
+        .address { font-style: normal; line-height: 2.2; color: #666; font-size: 14px; }
     </style>
 </head>
 <body>
 
-<header class="container">
-    <img src="IMG_7019.jpeg" alt="hair make mare ロゴ" class="logo-img">
+<header>
+    <img src="IMG_7019.jpeg" alt="hair make mare" class="logo-img">
 </header>
 
-<div class="container">
-    <section class="hero">
-        <img src="IMG_6656.jpeg" alt="セット面" class="hero-img">
-        <div class="hero-text">
-            <h1>もう、ショートで失敗したくないあなたへ</h1>
-            <p style="font-size: 14px;">大和市の丸み矯正ストレート ＆ ショートカット専門店</p>
+<main>
+    <section class="concept-area">
+        <div class="container">
+            <h2 class="concept-lead">都内に行かなくても、<br>理想のショートは大和で叶う。</h2>
+            <div class="concept-text">
+                ショートカットは、ごまかしが効かない技術です。<br>
+                大和市の mare では、都内の激戦区で磨いた技術を、ハワイアンリラックスな空間で提供します。<br><br>
+                「ここに来る時間だけは少し力を抜ける」<br>
+                そんな、あなたの日常にそっと寄り添う場所でありたいと願っています。
+            </div>
+            <div class="mid-cta">
+                <a href="https://beauty.hotpepper.jp/slnH000755415/" class="btn-small">ご予約はこちら</a>
+            </div>
         </div>
     </section>
 
-    <section class="message-section">
-    <h2>こんなお悩み、ありませんか？</h2>
-    <ul class="problem-list">
-        <li>ショートにしたいけど、顔が大きく見えそう…</li>
-        <li>広がる癖があって、短くするのを断られてきた</li>
-        <li>絶壁をカバーして、横顔をきれいに見せたい</li>
-        <li>縮毛矯正をすると、ツンツンして不自然になる</li>
-    </ul>
-    <p style="font-size: 15px; font-weight: bold;">mareの「丸み矯正」が解決します。</p>
-    <p style="font-size: 13px; text-align: left; margin-top: 20px;">
-        私たちは、ただ短くするだけではありません。独自の「丸み矯正」技術で、扱いやすく、女性らしい柔らかなシルエットを叶えます。ハワイアンな空間で、自分史上最高のショートを一緒に見つけましょう。
-    </p>
+    <div class="container">
+        <section class="gallery">
+            <h2 class="gallery-title">STYLES</h2>
+            <div class="gallery-scroll">
+                <div class="gallery-item"><img src="style_01.jpg" alt="ショートスタイル1" class="gallery-img"></div>
+                <div class="gallery-item"><img src="style_02.jpg" alt="ショートスタイル2" class="gallery-img"></div>
+                <div class="gallery-item"><img src="style_03.jpg" alt="ショートスタイル3" class="gallery-img"></div>
+            </div>
+        </section>
+
+        <section class="voice-section">
+            <h2 class="voice-title">CUSTOMER VOICE</h2>
+            
+            <div class="voice-card">
+                <p class="voice-text">「丁寧にカウンセリングしていただき、こちらの希望をしっかり汲み取ってくれました。仕上がりも、家でドライヤーするだけで形になるので本当に感動しています！」</p>
+                <p class="voice-info">30代女性 / カット・丸み矯正</p>
+            </div>
+
+            <div class="voice-card">
+                <p class="voice-text">「ショートにするのが不安でしたが、骨格に合わせて一番似合う形を提案してくれました。職場でも大好評です。大和にこんな素敵な専門店ができて嬉しい！」</p>
+                <p class="voice-info">40代女性 / デザインカット</p>
+            </div>
+
+            <div class="voice-card">
+                <p class="voice-text">「ハワイアンな雰囲気がとても落ち着きます。完全マンツーマンなので、周りを気にせずリラックスできました。技術も空間も、都内以上だと思います。」</p>
+                <p class="voice-info">40代女性 / カット・カラー</p>
+            </div>
+            
+            <div class="mid-cta">
+                <a href="https://beauty.hotpepper.jp/slnH000755415/" class="btn-small">この技術を予約する</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="menu-section container">
+        <h2>MENU</h2>
+        <div class="menu-category">
+            <span class="category-name">RECOMMENDED</span>
+            <div class="menu-item"><span>カット＋丸み矯正＋TR</span><span class="price">¥17,600〜</span></div>
+            <div class="menu-item"><span>カット＋フルカラー＋TR</span><span class="price">¥14,300〜</span></div>
+        </div>
+        <div class="menu-category">
+            <span class="category-name">BASIC</span>
+            <div class="menu-item"><span>ショートデザインカット</span><span class="price">¥6,600</span></div>
+            <div class="menu-item"><span>フルカラー</span><span class="price">¥7,700〜</span></div>
+            <div class="menu-item"><span>丸み矯正ストレート</span><span class="price">¥11,000〜</span></div>
+        </div>
     </section>
 
-    <img src="IMG_7017.jpeg" alt="シャンプー台" style="width:100%; border-radius:20px; margin-bottom:40px;">
-
-    <div class="menu-box">
-        <h3 style="text-align: center; font-size: 16px;">Recommended Menu</h3>
-        <div class="menu-item"><span>カット＋丸み矯正＋TR</span><span class="price">¥17,600〜</span></div>
-        <div class="menu-item"><span>カット＋カラー＋TR</span><span class="price">¥14,300〜</span></div>
-        <div class="menu-item"><span>ショートデザインカット</span><span class="price">¥6,600〜</span></div>
-    </div>
-    
-    <a href="https://beauty.hotpepper.jp/slnH000755415/" class="btn">ご予約はこちら（ホットペッパー）</a>
-    <a href="recruit.html" class="btn btn-recruit">採用情報（Recruit）</a>
-</div>
+    <section class="cta-area container">
+        <a href="https://beauty.hotpepper.jp/slnH000755415/" class="btn-large">RESERVATION</a>
+        <div style="margin-top: 60px;">
+            <a href="recruit.html" style="color: var(--sub-color); font-size: 13px;">採用情報はこちら</a>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <p><strong>hair make mare</strong><br>
-    神奈川県大和市大和1-11-2/ 大和駅 徒歩5分</p>
+    <address class="address">
+        <strong>hair make mare</strong><br>
+        神奈川県大和市大和東1-11-2 046-259-5388
+    </address>
     <p>© 2026 hair make mare</p>
 </footer>
 
