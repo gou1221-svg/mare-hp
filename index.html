@@ -19,7 +19,6 @@
 --ocean:#6ea8b5;
 }
 
-/* ★ハワイアン要素（ここだけ追加） */
 body{
 margin:0;
 font-family:'Shippori Mincho', serif;
@@ -27,36 +26,37 @@ line-height:2.1;
 color:#222;
 letter-spacing:0.05em;
 
-/* 海＋波っぽさ */
+/* 海感強化 */
 background:
-linear-gradient(to bottom,#ffffff,#eaf4f6),
-radial-gradient(circle at 20% 10%, rgba(110,168,181,0.15), transparent 40%),
-radial-gradient(circle at 80% 90%, rgba(110,168,181,0.12), transparent 40%);
+linear-gradient(to bottom,#ffffff 0%,#eaf4f6 40%,#d6eef2 100%),
+radial-gradient(circle at 20% 10%, rgba(110,168,181,0.25), transparent 50%),
+radial-gradient(circle at 80% 90%, rgba(110,168,181,0.2), transparent 50%);
 }
 
-/* 花の演出（うっすら） */
-body::before{
-content:"";
-position:fixed;
-top:0;
-right:0;
-width:140px;
-height:140px;
-background:
-radial-gradient(circle, rgba(255,182,193,0.25), transparent 70%);
-z-index:0;
-pointer-events:none;
-}
-
+/* 波 */
 body::after{
 content:"";
 position:fixed;
 bottom:0;
 left:0;
-width:140px;
-height:140px;
-background:
-radial-gradient(circle, rgba(255,218,185,0.25), transparent 70%);
+width:100%;
+height:120px;
+background:radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.6), transparent 70%);
+z-index:0;
+pointer-events:none;
+}
+
+/* 花 */
+body::before{
+content:"";
+position:fixed;
+top:20px;
+right:20px;
+width:120px;
+height:120px;
+background:radial-gradient(circle, rgba(255,182,193,0.4), transparent 70%);
+opacity:0.6;
+filter:blur(2px);
 z-index:0;
 pointer-events:none;
 }
@@ -77,29 +77,16 @@ padding:60px 0 20px;
 .logo{
 width:300px;
 max-width:85%;
-margin-bottom:6px;
 }
 
 .brand-sub{
 font-size:12px;
 color:#8e8071;
-letter-spacing:0.15em;
 }
 
 .fv{
 padding:60px 20px;
 text-align:center;
-}
-
-.fv h1{
-font-size:20px;
-margin:18px 0;
-}
-
-.sub{
-font-size:12px;
-color:var(--sub);
-letter-spacing:0.15em;
 }
 
 .section{
@@ -111,7 +98,6 @@ font-size:13px;
 letter-spacing:0.3em;
 text-align:center;
 color:var(--sub);
-margin-bottom:28px;
 }
 
 .box{
@@ -123,10 +109,8 @@ border-radius:6px;
 
 img{
 width:100%;
-height:auto;
-display:block;
-margin:0 auto 18px;
 border-radius:6px;
+margin-bottom:18px;
 }
 
 .section img{
@@ -141,9 +125,6 @@ border:1px solid var(--ocean);
 color:var(--ocean);
 text-decoration:none;
 margin:25px 0;
-font-size:12px;
-letter-spacing:0.15em;
-border-radius:4px;
 }
 
 .btn-primary{
@@ -152,21 +133,15 @@ text-align:center;
 padding:16px;
 background:var(--ocean);
 color:#fff;
-text-decoration:none;
 margin:25px 0;
-font-size:13px;
-letter-spacing:0.1em;
 border-radius:999px;
-font-weight:600;
-box-shadow:0 8px 20px rgba(0,0,0,0.12);
 }
 
 footer{
 background:#203a43;
 color:#fff;
 text-align:center;
-padding:70px 20px;
-font-size:12px;
+padding:60px 20px;
 }
 
 .floating-cta{
@@ -174,25 +149,19 @@ position:fixed;
 bottom:16px;
 left:50%;
 transform:translateX(-50%);
-width:88%;
-max-width:420px;
+width:90%;
 background:var(--ocean);
 color:#fff;
 text-align:center;
-padding:15px 18px;
+padding:14px;
 border-radius:999px;
-font-size:13px;
-font-weight:600;
-letter-spacing:0.08em;
-box-shadow:0 10px 25px rgba(0,0,0,0.18);
 z-index:9999;
 }
 </style>
+
 </head>
 
 <body>
-
-<!-- ここから下は一切変更なし（あなたのLPそのまま） -->
 
 <header>
 <img src="IMG_6650.jpeg" class="logo">
@@ -200,124 +169,89 @@ z-index:9999;
 </header>
 
 <section class="fv">
-<p class="sub">ショートカット専門美容室｜乾かすだけでまとまる設計</p>
+<p class="sub">ショートカット専門美容室</p>
 <h1>大和で“失敗しないショート”を</h1>
+
 <p>
 軽くしたのに広がる・まとまらない。<br>
-その原因は髪質ではなく“設計”です。<br><br>
-骨格・癖・髪質から逆算し、<br>
-乾かすだけでまとまるショートを提供します。
+その原因は髪質ではなく設計です。
 </p>
+
 <img src="IMG_7026.jpeg">
-<a href="https://lin.ee/BlcvJLJ" class="btn-primary">
-髪の相談はこちら（LINE）
-</a>
+
+<a href="https://lin.ee/BlcvJLJ" class="btn-primary">LINE相談</a>
 </section>
 
 <div class="container">
 
+<!-- CONCEPT前 -->
 <img src="IMG_9630.jpeg">
-
-<section class="section">
-<h2>CONCEPT</h2>
-<div class="box">
-ショートカットに特化した美容室です。<br><br>
-骨格補正・癖の扱い・再現性設計を軸に、<br>
-翌日から扱いやすい髪を作ります。
-</div>
-</section>
-
 <img src="IMG_7026.jpeg">
 
 <section class="section">
+<h2>CONCEPT</h2>
+<div class="box">ショート特化サロン</div>
+</section>
+
+<!-- WHY前 -->
+<img src="IMG_7017.jpeg">
+<img src="IMG_7019.jpeg">
+
+<section class="section">
 <h2>WHY US</h2>
-<div class="box">
-美容室帰りではなく「日常の扱いやすさ」を重視。<br><br>
-・乾かすだけで形になる<br>
-・朝のセット時間短縮<br>
-・スタイリング依存を減らす
-</div>
-<a href="https://lin.ee/BlcvJLJ" class="btn-primary">
-LINEで相談する
-</a>
+<div class="box">扱いやすさ重視</div>
 </section>
 
 <section class="section">
 <h2>STYLE</h2>
-<a href="https://www.instagram.com/short_gou1221/" class="btn">
-Instagramでスタイルを見る
-</a>
-<img src="IMG_6964.jpeg">
-<img src="IMG_7060.jpeg">
-</section>
 
-<section class="section">
-<h2>BEFORE / AFTER</h2>
-<p>BEFORE</p>
-<img src="IMG_0215.jpeg">
-<p>AFTER</p>
-<img src="IMG_8381.jpeg">
-<p style="font-size:11px;text-align:center;">
-※癖・ブリーチ履歴あり
-</p>
+<a href="https://www.instagram.com/short_gou1221/" class="btn">
+Instagramを見る
+</a>
+
+<img src="IMG_6998.jpeg">
+<img src="IMG_0030.jpeg">
 </section>
 
 <section class="section">
 <h2>METHOD</h2>
-<div class="box">
-癖を無視して軽くすると広がります。<br><br>
-mareでは丸み設計＋カット技術で収まりを作ります。
-</div>
+<div class="box">丸み設計</div>
 </section>
 
 <section class="section">
 <h2>MENU</h2>
 <div class="box">
-人気メニュー<br><br>
-【一番人気】<br>
-カット＋丸み矯正＋トリートメント<br>
-¥23,100<br><br>
-初めての方の約8割がこちらを選ばれています<br><br>
-ーーーーーーーーーー<br><br>
-カット<br>
-¥5,500
+カット＋丸み矯正＋トリートメント ¥23100<br>
+カット ¥5500
 </div>
-<a href="https://lin.ee/BlcvJLJ" class="btn-primary">
-メニューを相談する
-</a>
 </section>
 
 <section class="section">
 <h2>VOICE</h2>
-<div class="box">初めてまとまるショートになりました</div>
-<div class="box">乾かすだけで収まるのが楽です</div>
-<div class="box">ブリーチ毛でも自然でした</div>
-<a href="https://lin.ee/BlcvJLJ" class="btn-primary">
-今すぐLINEで相談
-</a>
+
+<div class="box">【30代女性】接客が良く満足</div>
+<div class="box">【40代女性】丸み矯正が最高</div>
+<div class="box">【50代女性】初来店でも安心</div>
+
 </section>
 
 <section class="section">
 <h2>ACCESS</h2>
 <div class="box">
-大和美容室 mare<br><br>
 〒242-0017<br>
-神奈川県大和市大和東1-11-2<br><br>
+神奈川県大和市大和東1-11-2<br>
 TEL：046-259-5388
 </div>
-<a href="https://lin.ee/BlcvJLJ" class="btn-primary">
-予約・相談はこちら
-</a>
 </section>
 
 </div>
 
 <footer>
-大和美容室 mare｜ショートカット専門美容室
+mare
 </footer>
 
 <a href="https://lin.ee/BlcvJLJ" class="floating-cta">
-LINEで予約・相談する
+LINE予約
 </a>
 
 </body>
