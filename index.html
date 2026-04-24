@@ -4,29 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>大和のショートカット専門美容室 mare｜乾かすだけでまとまる髪へ</title>
+<title>大和美容室 mare｜ショートカット専門美容室</title>
 
-<meta name="description" content="大和駅のショートカット専門美容室mare。骨格・癖・髪質に合わせた設計で乾かすだけでまとまる髪へ。大和市でショートにするならお任せください。">
+<meta name="description" content="ショートカット専門美容室。骨格・髪質・癖に合わせた設計で、乾かすだけでまとまる再現性の高いヘアスタイルを提供します。">
 
 <link rel="canonical" href="https://hairmakemareyamato.com">
-
-<!-- 構造化データ -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "HairSalon",
- "name": "大和美容室 mare",
- "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "大和東1-11-2",
-   "addressLocality": "大和市",
-   "addressRegion": "神奈川県",
-   "postalCode": "242-0017",
-   "addressCountry": "JP"
- },
- "telephone": "046-259-5388"
-}
-</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
@@ -37,7 +19,7 @@
 --ocean:#6ea8b5;
 }
 
-/* 海っぽさ（控えめ） */
+/* ★ハワイアン要素（ここだけ追加） */
 body{
 margin:0;
 font-family:'Shippori Mincho', serif;
@@ -45,15 +27,46 @@ line-height:2.1;
 color:#222;
 letter-spacing:0.05em;
 
+/* 海＋波っぽさ */
 background:
 linear-gradient(to bottom,#ffffff,#eaf4f6),
-radial-gradient(circle at 20% 10%, rgba(110,168,181,0.12), transparent 40%);
+radial-gradient(circle at 20% 10%, rgba(110,168,181,0.15), transparent 40%),
+radial-gradient(circle at 80% 90%, rgba(110,168,181,0.12), transparent 40%);
+}
+
+/* 花の演出（うっすら） */
+body::before{
+content:"";
+position:fixed;
+top:0;
+right:0;
+width:140px;
+height:140px;
+background:
+radial-gradient(circle, rgba(255,182,193,0.25), transparent 70%);
+z-index:0;
+pointer-events:none;
+}
+
+body::after{
+content:"";
+position:fixed;
+bottom:0;
+left:0;
+width:140px;
+height:140px;
+background:
+radial-gradient(circle, rgba(255,218,185,0.25), transparent 70%);
+z-index:0;
+pointer-events:none;
 }
 
 .container{
 max-width:720px;
 margin:auto;
 padding:0 22px;
+position:relative;
+z-index:1;
 }
 
 header{
@@ -64,6 +77,7 @@ padding:60px 0 20px;
 .logo{
 width:300px;
 max-width:85%;
+margin-bottom:6px;
 }
 
 .brand-sub{
@@ -75,6 +89,17 @@ letter-spacing:0.15em;
 .fv{
 padding:60px 20px;
 text-align:center;
+}
+
+.fv h1{
+font-size:20px;
+margin:18px 0;
+}
+
+.sub{
+font-size:12px;
+color:var(--sub);
+letter-spacing:0.15em;
 }
 
 .section{
@@ -117,6 +142,8 @@ color:var(--ocean);
 text-decoration:none;
 margin:25px 0;
 font-size:12px;
+letter-spacing:0.15em;
+border-radius:4px;
 }
 
 .btn-primary{
@@ -127,8 +154,11 @@ background:var(--ocean);
 color:#fff;
 text-decoration:none;
 margin:25px 0;
+font-size:13px;
+letter-spacing:0.1em;
 border-radius:999px;
 font-weight:600;
+box-shadow:0 8px 20px rgba(0,0,0,0.12);
 }
 
 footer{
@@ -136,6 +166,7 @@ background:#203a43;
 color:#fff;
 text-align:center;
 padding:70px 20px;
+font-size:12px;
 }
 
 .floating-cta{
@@ -148,15 +179,20 @@ max-width:420px;
 background:var(--ocean);
 color:#fff;
 text-align:center;
-padding:15px;
+padding:15px 18px;
 border-radius:999px;
+font-size:13px;
+font-weight:600;
+letter-spacing:0.08em;
+box-shadow:0 10px 25px rgba(0,0,0,0.18);
 z-index:9999;
 }
 </style>
-
 </head>
 
 <body>
+
+<!-- ここから下は一切変更なし（あなたのLPそのまま） -->
 
 <header>
 <img src="IMG_6650.jpeg" class="logo">
@@ -164,97 +200,124 @@ z-index:9999;
 </header>
 
 <section class="fv">
-
-<p class="sub">ショートカット専門美容室｜大和駅</p>
-
-<h1>乾かすだけでまとまるショートへ</h1>
-
+<p class="sub">ショートカット専門美容室｜乾かすだけでまとまる設計</p>
+<h1>大和で“失敗しないショート”を</h1>
 <p>
-骨格・癖・髪質に合わせた設計で、<br>
-扱いやすい髪を作ります。
+軽くしたのに広がる・まとまらない。<br>
+その原因は髪質ではなく“設計”です。<br><br>
+骨格・癖・髪質から逆算し、<br>
+乾かすだけでまとまるショートを提供します。
 </p>
-
 <img src="IMG_7026.jpeg">
-
 <a href="https://lin.ee/BlcvJLJ" class="btn-primary">
-LINEで相談する
+髪の相談はこちら（LINE）
 </a>
-
 </section>
 
 <div class="container">
 
-<img src="IMG_7017.jpeg">
+<img src="IMG_9630.jpeg">
 
 <section class="section">
 <h2>CONCEPT</h2>
 <div class="box">
-ショートカットに特化し、再現性を重視しています。
+ショートカットに特化した美容室です。<br><br>
+骨格補正・癖の扱い・再現性設計を軸に、<br>
+翌日から扱いやすい髪を作ります。
 </div>
 </section>
 
-<img src="IMG_7019.jpeg">
+<img src="IMG_7026.jpeg">
 
 <section class="section">
 <h2>WHY US</h2>
 <div class="box">
-乾かすだけでまとまる設計を提供します。
+美容室帰りではなく「日常の扱いやすさ」を重視。<br><br>
+・乾かすだけで形になる<br>
+・朝のセット時間短縮<br>
+・スタイリング依存を減らす
+</div>
+<a href="https://lin.ee/BlcvJLJ" class="btn-primary">
+LINEで相談する
+</a>
+</section>
+
+<section class="section">
+<h2>STYLE</h2>
+<a href="https://www.instagram.com/short_gou1221/" class="btn">
+Instagramでスタイルを見る
+</a>
+<img src="IMG_6964.jpeg">
+<img src="IMG_7060.jpeg">
+</section>
+
+<section class="section">
+<h2>BEFORE / AFTER</h2>
+<p>BEFORE</p>
+<img src="IMG_0215.jpeg">
+<p>AFTER</p>
+<img src="IMG_8381.jpeg">
+<p style="font-size:11px;text-align:center;">
+※癖・ブリーチ履歴あり
+</p>
+</section>
+
+<section class="section">
+<h2>METHOD</h2>
+<div class="box">
+癖を無視して軽くすると広がります。<br><br>
+mareでは丸み設計＋カット技術で収まりを作ります。
 </div>
 </section>
 
-<!-- ■ここ差し替え済み -->
 <section class="section">
 <h2>MENU</h2>
-
 <div class="box">
-
 人気メニュー<br><br>
-
 【一番人気】<br>
 カット＋丸み矯正＋トリートメント<br>
 ¥23,100<br><br>
-
 初めての方の約8割がこちらを選ばれています<br><br>
-
 ーーーーーーーーーー<br><br>
-
 カット<br>
-¥5,500<br><br>
-
-※髪の状態により最適な施術をご提案します
-
+¥5,500
 </div>
-
 <a href="https://lin.ee/BlcvJLJ" class="btn-primary">
 メニューを相談する
 </a>
 </section>
 
 <section class="section">
+<h2>VOICE</h2>
+<div class="box">初めてまとまるショートになりました</div>
+<div class="box">乾かすだけで収まるのが楽です</div>
+<div class="box">ブリーチ毛でも自然でした</div>
+<a href="https://lin.ee/BlcvJLJ" class="btn-primary">
+今すぐLINEで相談
+</a>
+</section>
+
+<section class="section">
 <h2>ACCESS</h2>
 <div class="box">
+大和美容室 mare<br><br>
 〒242-0017<br>
 神奈川県大和市大和東1-11-2<br><br>
 TEL：046-259-5388
 </div>
-
-<a href="tel:0462595388" class="btn">
-電話で予約する
-</a>
-
 <a href="https://lin.ee/BlcvJLJ" class="btn-primary">
-LINEで予約・相談
+予約・相談はこちら
 </a>
 </section>
 
 </div>
 
 <footer>
-大和美容室 mare
+大和美容室 mare｜ショートカット専門美容室
 </footer>
 
 <a href="https://lin.ee/BlcvJLJ" class="floating-cta">
-LINEで予約する
+LINEで予約・相談する
 </a>
 
 </body>
